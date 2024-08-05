@@ -1,1 +1,49 @@
+body {
+    font-family: "Roboto";
+    background-color: rgb(22, 22, 22);
+    color: white;
+    min-height: 100vh;
+    display: inline-block;
+}
+
+section {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#header-section {
+    background-image: linear-gradient(45deg,
+    rgb(41, 47, 86),
+    rgb(30, 69, 114),
+    rgb(0, 92, 139),
+    rgb(0, 116, 152),
+    rgb(0, 139, 160),
+    rgb(0, 163, 164),
+    rgb(0, 188, 161),
+    rgb(0, 212, 147),
+    rgb(105, 232, 130),
+    rgb(172, 250, 112)
+    );
+    background-size: 400%;
+    animation: title-animation 20s infinite;
+    font-size: 1.5em;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    position: sticky; top: 0;
+    width: 100vw;
+}
+
+@keyframes title-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
 
